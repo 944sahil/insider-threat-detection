@@ -139,7 +139,7 @@ def generate_narratives(user_role_map):
 if __name__ == "__main__":
     # Assumed project structure from previous conversations
     SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-    PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+    PROJECT_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
     RAW_DATA_PATH = os.path.join(PROJECT_ROOT, 'data', 'raw', 'r1')
     PROCESSED_DATA_PATH = os.path.join(PROJECT_ROOT, 'data', 'processed', 'r1')
     LDAP_FOLDER_PATH = os.path.join(RAW_DATA_PATH, 'ldap')
